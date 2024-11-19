@@ -8,9 +8,7 @@ function checkOnlineStatus() {
     }
 }
 
-// Check the online status when the page loads
 window.addEventListener('load', checkOnlineStatus);
 
-// Check the online status when the online/offline event is triggered
 window.addEventListener('online', checkOnlineStatus);
 window.addEventListener('offline', checkOnlineStatus);
